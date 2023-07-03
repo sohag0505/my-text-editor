@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-text-editor</title>
+    <script src="https://kit.fontawesome.com/05cf16af73.js" crossorigin="anonymous"></script>
+    <style>
+        .box {
+            background-color: skyblue;
+            text-align: center;
+            height: 866px;
+            width: 80%;
+            margin-left: 200px;
+        }
+        
+        .heading {
+            font-size: 52px;
+        }
+        
+        .box2 {
+            border: 2px solid black;
+            height: 655px;
+            margin: 80px;
+            background-color: rgb(132, 243, 206);
+        }
+        
+        .box3 {
+            border: 2px solid black;
+            margin: 15px;
+            height: 550px;
+            width: 1255px;
+        }
+        
+        .icons {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px;
+        }
+        
+        #testh1 {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="box">
+            <h1 class="heading">My Text Editor</h1>
+            <div class="box2">
+                <div class="icons">
+                    <i id="bold-click" class="fa-sharp fa-solid fa-bold"></i>
+                    <i id="italic" class="fa-solid fa-italic"></i>
+                    <i id="align-left" class="fa-solid fa-align-left"></i>
+                    <i id="align-center" class="fa-solid fa-align-center"></i>
+                    <i id="align-right" class="fa-solid fa-align-right"></i>
+                    <i id="align-justify" class="fa-solid fa-align-justify"></i>
+                    <input type="color" name="" id="text-color">
+                    <input type="number" id="text-size" value="14" min="14">
+                </div>
+
+                <hr>
+                <textarea id="text-edit" class="box3"></textarea>
+            </div>
+        </div>
+
+    </section>
+    <script src="text.js"></script>
+</body>
+
+</html>
